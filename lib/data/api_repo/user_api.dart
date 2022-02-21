@@ -7,7 +7,7 @@ class UserApi {
   final Dio _dio = Dio();
   // final String _url = "https://jsonplaceholder.typicode.com/users/$userID/";
 
-  Future<UserModel> fetchUserList() async {
+  Future<UserModel> fetchUser() async {
     int userID = Random().nextInt(10);
     try {
       Response response =

@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void initState() {
-    _userBloc.add(GetUserList());
+    _userBloc.add(GetUser());
     super.initState();
   }
 
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ));
   }
 
-  Widget _buildLoading() => Center(child: CircularProgressIndicator());
+  Widget _buildLoading() => const Center(child: CircularProgressIndicator());
 
   Widget buildUser(BuildContext context, UserModel model) {
     return Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
@@ -198,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
         width: double.infinity,
         child: TextButton(
           onPressed: () {
-            _userBloc.add(GetUserList());
+            _userBloc.add(GetUser());
           },
           child: const Icon(
             Icons.refresh,

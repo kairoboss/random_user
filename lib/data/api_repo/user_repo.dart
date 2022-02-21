@@ -4,7 +4,7 @@ import 'package:api_practice/data/model/user_model.dart';
 class UserRepository {
   final UserApi _userApi = UserApi();
 
-  Future<UserModel> fetchUserList() {
-    return _userApi.fetchUserList();
+  Future<UserModel> fetchUser() {
+    return _userApi.fetchUser();
   }
 }

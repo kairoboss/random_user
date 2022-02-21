@@ -3,4 +3,4 @@ part of 'user_bloc.dart';
 @immutable
 abstract class UserEvent {}
 
-class GetUserList extends UserEvent {}
+class GetUser extends UserEvent {}
